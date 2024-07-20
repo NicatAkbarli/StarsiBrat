@@ -1,0 +1,14 @@
+C:\Users\Victus\Desktop\EmailVerificationApp\EmailVerificationApp\bin\Debug\net8.0\EmailVerificationApp.exe
+C:\Users\Victus\Desktop\EmailVerificationApp\EmailVerificationApp\bin\Debug\net8.0\EmailVerificationApp.deps.json
+C:\Users\Victus\Desktop\EmailVerificationApp\EmailVerificationApp\bin\Debug\net8.0\EmailVerificationApp.runtimeconfig.json
+C:\Users\Victus\Desktop\EmailVerificationApp\EmailVerificationApp\bin\Debug\net8.0\EmailVerificationApp.dll
+C:\Users\Victus\Desktop\EmailVerificationApp\EmailVerificationApp\bin\Debug\net8.0\EmailVerificationApp.pdb
+C:\Users\Victus\Desktop\EmailVerificationApp\EmailVerificationApp\obj\Debug\net8.0\EmailVerificationApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Victus\Desktop\EmailVerificationApp\EmailVerificationApp\obj\Debug\net8.0\EmailVerificationApp.AssemblyInfoInputs.cache
+C:\Users\Victus\Desktop\EmailVerificationApp\EmailVerificationApp\obj\Debug\net8.0\EmailVerificationApp.AssemblyInfo.cs
+C:\Users\Victus\Desktop\EmailVerificationApp\EmailVerificationApp\obj\Debug\net8.0\EmailVerificationApp.csproj.CoreCompileInputs.cache
+C:\Users\Victus\Desktop\EmailVerificationApp\EmailVerificationApp\obj\Debug\net8.0\EmailVerificationApp.dll
+C:\Users\Victus\Desktop\EmailVerificationApp\EmailVerificationApp\obj\Debug\net8.0\refint\EmailVerificationApp.dll
+C:\Users\Victus\Desktop\EmailVerificationApp\EmailVerificationApp\obj\Debug\net8.0\EmailVerificationApp.pdb
+C:\Users\Victus\Desktop\EmailVerificationApp\EmailVerificationApp\obj\Debug\net8.0\EmailVerificationApp.genruntimeconfig.cache
+C:\Users\Victus\Desktop\EmailVerificationApp\EmailVerificationApp\obj\Debug\net8.0\ref\EmailVerificationApp.dll
