@@ -1,32 +1,48 @@
 using System;
-using System.Net;
-using System.Net.Mail;
+using MailKit.Net.Smtp;
+using MimeKit;
 
 public class EmailHelper
 {
     public static void SendEmail(string toEmail, string subject, string body)
     {
-        string fromEmail = "hesidi22@gmail.com";  // Kendi email adresinizi yazın
-        string fromPassword = "Nicat2005";       // Kendi email şifrenizi yazın
+        // E-posta mesajını oluştur
+        var message = new MimeMessage();
+        message.From.Add(new MailboxAddress("Nicat", "nicatakbarli571@gmail.com")); // Gönderen e-posta adresi
+        message.To.Add(new MailboxAddress("", toEmail)); // Alıcı e-posta adresi
+        message.Subject = subject; // E-posta konusu
 
-       MailMessage mail = new MailMessage();
-        mail.From = new MailAddress(fromEmail);
-        mail.To.Add(toEmail);
-        mail.Subject = subject;
-        mail.Body = body;
-
-        SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587); // Gmail SMTP server adresi ve portu
-        smtpClient.Credentials = new NetworkCredential(fromEmail, fromPassword);
-        smtpClient.EnableSsl = true;
-
-        try
+        // E-posta içeriğini ayarla
+        message.Body = new TextPart("plain")
         {
-            smtpClient.Send(mail);
-            Console.WriteLine("Email sent successfully.");
-        }
-        catch (Exception ex)
+            Text = body
+        };
+
+        // SMTP istemcisi ile e-posta gönderimi
+        using (var client = new SmtpClient())
         {
-            Console.WriteLine("Error sending email: " + ex.Message);
+            try
+            {
+                // SMTP sunucusuna bağlan
+                client.Connect("smtp.gmail.com", 587, MailKit.Security.SecureSocketOptions.StartTls);
+                
+                // Kimlik doğrulama
+                // Uygulama şifresi kullanılmalı
+                client.Authenticate("nicatakbarli571@gmail.com", "uuiz mfrj uvnp qhex");
+                
+                // E-postayı gönder
+                client.Send(message);
+                Console.WriteLine("Email sent successfully.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error sending email: " + ex.Message);
+            }
+            finally
+            {
+                // Bağlantıyı kes
+                client.Disconnect(true);
+            }
         }
     }
 }
