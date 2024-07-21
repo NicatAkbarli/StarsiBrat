@@ -28,7 +28,7 @@ public class EmailHelper
                 
                 // Kimlik doğrulama
                 // Uygulama şifresi kullanılmalı
-                client.Authenticate("nicatakbarli571@gmail.com", "uuiz mfrj uvnp qhex");
+                client.Authenticate("nicatakbarli571@gmail.com", "Program Kodu");
                 
                 // E-postayı gönder
                 client.Send(message);
